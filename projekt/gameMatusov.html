@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<title>Hra - Matušov</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jsMatusov/menuItems.js"></script>
+	<script src="jsMatusov/menuGenerator.js"></script>
+    <script src="jsMatusov/breadcrumbs.js"></script>
+    <script src="jsMatusov/gameMatusov.js"></script>
+	<link rel="stylesheet" href="styleMatusov.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="makeDraggable()">
+	<ul id=menu></ul>
+	
+    <span id=breadcrumbsSpan></span>
+    <section id=gameSection>
+
+        <h2 id=timer>Uplynulý čas: 00:00:00</h2>
+
+        <button id=checklist type="button" onclick="showChecklist()">Checklist</button>
+        <button id=reload type="button" onclick="reloadPage()">Spustiť znova</button>
+
+        <span id=guide>Návod: Presuň jednotlivé časti skladačky na plochu doprava</span>
+
+        <img id=part1 src="imgMatusov/part1.png" alt="Part 1">
+        <img id=part2 src="imgMatusov/part2.png" alt="Part 2">
+        <img id=part3 src="imgMatusov/part3.png" alt="Part 3">
+        <img id=part4 src="imgMatusov/part4.png" alt="Part 4">
+        <img id=part5 src="imgMatusov/part5.png" alt="Part 5">
+        <img id=part6 src="imgMatusov/part6.png" alt="Part 6">
+        <img id=part7 src="imgMatusov/part7.png" alt="Part 7">
+        <img id=part8 src="imgMatusov/part8.png" alt="Part 8">
+        <img id=part9 src="imgMatusov/part9.png" alt="Part 9">
+
+        <section id=puzzleSection></section>
+    </section>
+        
+    <script>
+        breadcrumbs()
+	</script>
+</body>
+
+</html>
