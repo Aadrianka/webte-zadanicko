@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<title>Kontakt - Matušov</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jsMatusov/menuItems.js"></script>
+	<script src="jsMatusov/menuGenerator.js"></script>
+	<script src="jsMatusov/breadcrumbs.js"></script>
+	<link rel="stylesheet" href="styleMatusov.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<ul id=menu></ul>
+	
+    <span id=breadcrumbsSpan></span>
+    
+    <section id=kontakt>
+            <h3>Adresa:</h3>
+            <p>
+                Jakub Matušov<br>
+                Novohradská 28<br>
+                990 01 Veľký Krtíš<br>
+            </p>
+            <h3>E-mail:</h3>
+            <address>
+                <a href="mailto:jakub.matusov1@gmail.com">jakub.matusov1@gmail.com</a>
+            </address>	
+            <h3>Telefón:</h3>
+            <p>+421 904 994 732</p>
+        </section>
+
+	<script>
+		breadcrumbs()
+	</script>
+</body>
+
+</html>

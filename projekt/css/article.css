@@ -1,0 +1,23 @@
+#mainFrame {
+    border: 1px solid black;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+#mainFrame div {
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */    
+    flex: 1;
+}
+
+#frameLeft {
+    background-color:coral;
+}
+
+#frameMiddle {
+    background-color:lightblue;
+}
+
+#frameRight{ 
+    background-color:lightgreen;
+}

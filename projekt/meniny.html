@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/meniny.css">
+    <script src="js/meniny.js"></script>
+    <!-- <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script> -->
+    <title>Meniny</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jsMatusov/menuItems.js"></script>
+    <script src="jsMatusov/menuGenerator.js"></script>
+    <script src="jsMatusov/breadcrumbs.js"></script>
+    <link rel="stylesheet" href="styleMatusov.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <ul id=menu></ul>
+    <span id=breadcrumbsSpan></span>
+    <div id="meninyDiv">
+        <div id="dayToName">
+            <label>Zadajte datum vo vhodnom formate</label>
+            <input type="text" id="fullDateInput">
+            <input type="button" name="button" id="button" value="Najdi mena!" onclick="findNamesAtDay()">
+            <p id="pMonth"></p>
+            <p id="pDay"></p>
+            <p id="pFinal"></p>
+        </div>
+        <div id="nameToDay">
+            <label>Zadajte meno </label>
+            <input type="text" name="searchingName" id="searchingName">
+            <input type="button" name="button" id="button" value="Najdi datum!" onclick="findDatesAtName()">
+        </div>
+    </div>
+    <script>
+        breadcrumbs()
+    </script>
+
+</body>
+
+</html>

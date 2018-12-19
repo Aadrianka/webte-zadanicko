@@ -9,7 +9,7 @@ var menuItems = {
 		{
 			"name": "Text z článkov",
 			"class": "1",
-			"href": "clanky.html",
+			"href": "articles.html",
 			"children": null
 		},
 		{
@@ -37,7 +37,7 @@ var menuItems = {
 						{
 							"name": "Kontakt",
 							"class": "3",
-							"href":	"kontakt_matusov.html",
+							"href":	"kontaktMatusov.html",
 							"children": null
 						}
 					]
@@ -56,7 +56,7 @@ var menuItems = {
 						{
 							"name": "Kontakt",
 							"class": "3",
-							"href":	"kontakt_dano.html",
+							"href":	"kontaktDano.html",
 							"children": null
 						}
 					]
@@ -75,7 +75,7 @@ var menuItems = {
 						{
 							"name": "Kontakt",
 							"class": "3",
-							"href":	"kontakt_dano.html",
+							"href":	"kontaktSelepova.html",
 							"children": null
 						}
 					]
