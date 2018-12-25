@@ -1,0 +1,21 @@
+/*Hoja de estilos*/
+#svgFrame {
+	display: block;
+	margin: 0 auto;
+}
+
+body{
+    text-align: center;
+}
+
+#fullImage {
+	opacity: 0.6;
+}
+
+#timer{
+    text-align: center;
+}
+
+#startButton{
+    text-align: center;
+}
